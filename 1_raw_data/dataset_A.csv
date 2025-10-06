@@ -1,0 +1,501 @@
+"id_A","nome","nome_mae","data_nascimento","municipio","sexo","ano_atendimento"
+1,"Letícia Andrade","juREma goNÇalVeS","2001-11-20","Porto Velho","F",2010
+2,"Ana Maria","Neide Oliveira","1984-12-22","Canoas","F",2023
+3,"FÁBIO MARTINS","luzia helena","1998-07-04","cAMpo grandE","M",2015
+4,"Tiago Lima","ROSELI SOUZA","1981-09-21","Mossoró","M",2021
+5,"Carolina Brito","Sonia Regina","1971-08-10","Rio Branco","M",2020
+6,"Luiz fErNando","Carla Moreira","1972-09-07","dourados","M",2010
+7,"natália pires","Ivone Marques","1972-06-15","osasco","M",2016
+8,"PAULO HENRIQUE","joSEFA SANTOs","1973-03-16","Niterói","M",2023
+9,"CAROLINA BRITO","Aparecida Silva","2003-09-09","betim","M",2019
+10,"Fábio Martins","FRANCISCA NUNES","1980-05-12","campos dos goytacazes","M",2022
+11,"LEtÍCia andradE","Iolanda Ribeiro","2002-06-23","SÃO PAULO","F",2017
+12,"ROBERTA NUNES","zilda gomes","1989-11-26","siNop","M",2014
+13,"Renata Lima","CONCEIÇÃO SANTOS","1990-01-15","Nova Iguaçu","M",2017
+14,"JOÃO SILVA","iVone mARQUeS","1981-11-25","CUiAbá","M",2021
+15,"máRIO aUgUsto","josefa santos","1978-05-14","ITABUNA","F",2022
+16,"fábio martins","raimunda carvalho","2002-04-01","juazeiro","F",2022
+17,"EDUARDO SANTOS","CONCEIÇÃO SANTOS","2002-08-05","RIO DE JANEIRO","F",2016
+18,"Carolina Brito","sonia regina","1988-11-25","juiz de fora","F",2010
+19,"LEtÍCia AnDRAde","aparecida silva","1976-12-04","São Paulo","M",2016
+20,"marcela freitas","roseli souza","1978-02-23","marabá","M",2017
+21,"cláudio henrique","Ângela Maria","1989-07-12","campo grande","M",2014
+22,"MARCOS PAULO","ROSELI SOUZA","2000-01-30","CUiAbÁ","F",2017
+23,"Roberta Nunes","Helena Moura","1987-04-28","Lauro De Freitas","M",2010
+24,"LEANDRO DUARTE","MARTA CRISTINA","2005-05-22","Salvador","F",2023
+25,"GABRIELA ALMEIDA","ZILDA GOMES","1970-03-15","Dourados","F",2021
+26,"Maurício Souza","Francisca Nunes","1983-05-30","sorocaba","M",2010
+27,"jOão SilVa","ÂNgeLa MARIa","1986-07-09","arapiraca","F",2013
+28,"Igor Barros","Roseli Souza","1993-07-01","blumenau","M",2011
+29,"cÉSAr aUgUsto","vera lÚCia","2003-04-30","NOVA IGUAÇU","M",2016
+30,"natália pires","JOSEFA SANTOS","1974-10-14","Contagem","F",2014
+31,"Helena Castro","conceição santos","1980-04-03","RIO DE JANEIRO","M",2016
+32,"elaine cristina","Ivone Marques","1994-03-19","palmas","F",2016
+33,"Beatriz Oliveira","elza rocha","1996-07-15","Palmas","F",2022
+34,"sérgio ribeiro","Ângela Maria","1982-02-03","Vitória Da Conquista","M",2018
+35,"Fernanda Souza","carla moreira","2002-05-30","maringá","M",2021
+36,"carolina brito","neide oliveira","1975-11-10","Itabuna","M",2020
+37,"Carlos Eduardo","Rita De Cássia","2001-05-10","PALMAS","M",2015
+38,"sérgio ribeiro","JOsEfA SantOs","1989-10-07","CAMPO GRANDE","F",2012
+39,"LuIZ fERNaNDo","francisca nunes","1982-05-31","MANAUS","F",2016
+40,"Cláudio Henrique","CoNceIÇãO santoS","1989-11-12","Campinas","F",2018
+41,"GABRIELA ALMEIDA","jurema gonçalves","2004-02-08","Canoas","M",2020
+42,"MARCOS PAULO","Carla Moreira","1991-11-16","Campinas","F",2022
+43,"CARLOS EDUARDO","ANA LÚCIA","1990-03-16","Dourados","F",2013
+44,"LEANDRO DUARTE","Ivone Marques","2004-10-29","são luís","F",2010
+45,"tatiane mendes","maRIa DE loURDeS","1973-08-20","Balneário Camboriú","F",2011
+46,"natália pires","Aparecida Silva","1984-10-23","PETROLINA","F",2018
+47,"ALINE GOMES","ROSELI SOUZA","1985-02-19","Feira De Santana","F",2021
+48,"RENATA LIMA","soNiA ReGiNA","1980-01-05","lOndriNA","F",2014
+49,"Lúcia Helena","sonia regina","1995-04-02","BALNEÁRIO CAMBORIÚ","F",2017
+50,"LÚCIA HELENA","APARECIDA SILVA","1973-10-10","Betim","M",2013
+51,"maria aparecida","marta cristina","1972-07-18","CANOAS","F",2019
+52,"JOÃO SILVA","Ana Lúcia","1974-10-25","juazeiro","F",2011
+53,"FELIPE ARAÚJO","Neide Oliveira","1994-04-29","Goiânia","F",2010
+54,"Maria Aparecida","martA cRiSTiNA","1970-04-12","MACEIÓ","F",2010
+55,"Danilo Teixeira","TEREZA CRISTINA","1981-11-30","UBERABA","M",2022
+56,"TIAGO LIMA","marta cristina","2005-07-01","Belém","M",2010
+57,"Maurício Souza","VERA LÚCIA","1990-10-18","CAMAÇARI","F",2023
+58,"MARCOS PAULO","Ângela Maria","1979-01-05","Ribeirão Preto","M",2018
+59,"IGOr bARROS","JUREMA GONÇALVES","1997-05-30","ANANINDEUA","M",2012
+60,"viviane ramos","VERA LÚCIA","1983-02-07","campo grande","F",2019
+61,"carolina brito","Ângela Maria","1998-06-08","PORTO VELHO","F",2010
+62,"Cláudio Henrique","Roseli Souza","1991-12-14","Campinas","M",2011
+63,"cÉsAR AUgUSto","Aparecida Silva","2001-03-02","Lauro De Freitas","F",2021
+64,"Juliana Santos","ANA LÚCIA","1998-02-09","São Paulo","M",2012
+65,"Diego Moreira","RiTa DE CÁSsiA","1997-08-05","JUIZ DE FORA","M",2018
+66,"Patrícia Moraes","josefa santos","1972-04-05","goiânia","M",2013
+67,"ROBERTA NUNES","FRANCISCA NUNES","1987-11-16","Rondonópolis","F",2021
+68,"JUliANa SaNtOs","Noêmia Pires","1990-04-23","PALMAS","F",2013
+69,"ELAINE CRISTINA","Ivone Marques","1977-10-14","Jaboatão Dos Guararapes","M",2012
+70,"tatiane mendes","FRANCISCA NUNES","1993-09-16","Chapecó","F",2018
+71,"diego moreira","iolanda ribeiro","1979-09-01","MOSSORÓ","F",2011
+72,"Bruna Carvalho","tereza cristina","1995-08-05","BELÉM","M",2015
+73,"letícia andrade","maria DE LouRdeS","1986-06-07","chapecó","M",2011
+74,"GABRIELA ALMEIDA","ZILDA GOMES","1996-07-15","NATAL","M",2015
+75,"Marcos Paulo","TEREZA CRISTINA","1974-08-25","BOA VISTA","M",2021
+76,"gabriela almeida","Helena Moura","1978-03-10","Porto Velho","F",2022
+77,"Maria Aparecida","Zilda Gomes","2002-07-17","Foz Do Iguaçu","F",2012
+78,"luiz fernando","ângela maria","1974-01-19","DOURADOS","M",2020
+79,"Natália Pires","Zilda Gomes","1991-08-31","SALVADOR","M",2015
+80,"Luiz Fernando","ana lúcia","1981-04-25","Natal","M",2015
+81,"MARCOS PAULO","MARTA CRISTINA","1999-06-24","guarulhos","M",2023
+82,"Maurício Souza","CARLA MOREIRA","1999-08-18","Joinville","F",2017
+83,"MaurÍCIo SoUza","RITA DE CÁSSIA","1980-04-27","Goiânia","M",2023
+84,"Felipe Araújo","Josefa Santos","1988-06-15","goiânia","F",2016
+85,"Carolina Brito","Ângela Maria","2001-07-04","MOSSORÓ","F",2013
+86,"Carolina Brito","ângela maria","1973-05-24","Itabuna","M",2012
+87,"ViviaNe RAmOS","ângela maria","1991-10-13","DOURADOS","M",2012
+88,"César Augusto","Neide Oliveira","1983-02-05","São José Dos Campos","F",2016
+89,"LUIZ FERNANDO","Maria De Lourdes","1993-02-10","Osasco","M",2021
+90,"Eduardo Santos","IVONE MARQUES","2002-01-28","Ribeirão Preto","M",2020
+91,"André Luiz","elza rocha","1986-08-27","Palmas","M",2014
+92,"gustavo rocha","Ivone Marques","1989-11-27","Goiânia","F",2011
+93,"PRISCILA FIGUEIREDO","FRANCISCA NUNES","1989-06-12","itajaí","F",2014
+94,"BRUNA CARVALHO","elza rocha","1988-07-04","Campinas","F",2017
+95,"diego moreira","ana lúcia","1993-07-05","contagem","F",2011
+96,"CAMILa PEreirA","Helena Moura","1993-06-06","João Pessoa","M",2013
+97,"simone alves","Francisca Nunes","1990-10-17","Chapecó","F",2016
+98,"JULIANA SANTOS","ELZA ROCHA","2000-12-15","ANaNiNDeua","M",2020
+99,"felipe araújo","sonia regina","1982-05-06","CAMAÇARI","F",2021
+100,"ELAINE CRISTINA","neide oliveira","1995-06-23","uberLânDIA","M",2022
+101,"fernanda souza","ângela maria","1995-05-23","JoÃO PessOA","F",2019
+102,"Diego Moreira","IvoNe marQueS","2005-01-05","Curitiba","F",2013
+103,"DAnIlo tEixeira","ZILDA GOMES","1973-12-29","Campo Grande","M",2014
+104,"ana maria","cARla MOREirA","1980-02-08","CAMAÇARI","M",2019
+105,"andré luiz","ana lúcia","1999-03-14","Campos Dos Goytacazes","M",2015
+106,"RODRIGO COSTA","Jurema Gonçalves","1990-09-28","Passo Fundo","M",2016
+107,"marcos paulo","luzia helena","1995-10-05","ananindeua","F",2020
+108,"Juliana Santos","iolanda ribeiro","1992-10-25","DOURADOS","M",2023
+109,"Bruna Carvalho","VERA LÚCIA","1970-12-27","sinop","F",2022
+110,"renata lima","Rita De Cássia","1988-07-17","manaus","M",2014
+111,"ELAInE CrIstina","IOLanDa RiBeirO","1980-04-07","aRapIracA","M",2015
+112,"César Augusto","fraNCISCA nuNeS","1973-09-23","ArAPiraCa","F",2014
+113,"César Augusto","Elza Rocha","1985-10-18","cAruAru","M",2018
+114,"Igor Barros","roseli souza","1971-03-01","Foz Do Iguaçu","M",2023
+115,"Diego Moreira","Raimunda Carvalho","1985-02-14","Petrópolis","M",2017
+116,"FÁBIO MARTINS","Elza Rocha","1984-05-28","NOVA IGUAÇU","M",2019
+117,"Priscila Figueiredo","helena moura","1970-12-20","dourados","F",2017
+118,"CAMiLA pEREirA","sonia regina","1973-11-21","Camaçari","F",2017
+119,"rodrigo costa","Sonia Regina","2002-03-31","Anápolis","M",2010
+120,"Lúcia Helena","rita de cássia","1973-02-07","RONDONÓPOLIS","M",2016
+121,"Elaine Cristina","VERA LÚCIA","1991-10-13","Ponta Grossa","M",2011
+122,"Letícia Andrade","ana lúcia","1981-04-26","são JoSÉ DoS CAmPOs","F",2013
+123,"bruna carvalho","francisca nunes","1976-09-21","Campina Grande","F",2016
+124,"Marcela Freitas","ROSELI SOUZA","1972-03-06","Brasília","M",2022
+125,"leandro duarte","VERA LÚCIA","1983-10-03","BELÉM","M",2012
+126,"HELENA CASTRO","luzia helena","2003-11-09","Juiz De Fora","F",2021
+127,"Priscila Figueiredo","APARECIDA SILVA","1978-06-14","uberlândia","F",2015
+128,"Lúcia Helena","Elza Rocha","2005-05-07","nova iguaçu","M",2020
+129,"sérgio ribeiro","Maria De Lourdes","1995-05-20","vitória","F",2020
+130,"DANILO TEIXEIRA","Vera Lúcia","1998-03-07","Osasco","F",2023
+131,"marcela freitas","lUZIA HEleNa","1990-06-13","Criciúma","M",2013
+132,"LÚCIA HELENA","NOÊMIA PIRES","1982-08-22","Macapá","F",2015
+133,"roberta nunes","Ana Lúcia","1995-11-17","São Paulo","F",2014
+134,"beAtRIz oLiveirA","Noêmia Pires","1979-09-05","SOROCABA","M",2022
+135,"LEANDRO DUARTE","Helena Moura","1974-08-06","Blumenau","F",2016
+136,"César Augusto","Ivone Marques","2000-08-23","campo grande","F",2013
+137,"aline gomes","JOSEFA SANTOS","1990-12-08","RIO DE JANEIRO","F",2021
+138,"PATRÍCIA MORAES","APARECIDA SILVA","2005-08-07","Belo Horizonte","M",2016
+139,"RENATA LIMA","ana lúcia","1982-06-13","Curitiba","M",2011
+140,"MÁRIO AUGUSTO","iOLaNda ribEirO","1976-02-08","Salvador","F",2018
+141,"ana maria","LuzIa HELENa","1972-01-17","jaboatão dos guararapes","M",2011
+142,"MARIA APARECIDA","Raimunda Carvalho","2000-10-02","VitÓRia","M",2019
+143,"Natália Pires","SOnIA rEGINa","1990-07-06","CAMPO GRANDE","F",2023
+144,"LEANDRO DUARTE","CArlA mOReiRA","1970-11-09","mArInGá","F",2020
+145,"fÁBIo MArtIns","Tereza Cristina","1999-05-11","Aparecida De Goiânia","M",2013
+146,"Gabriela Almeida","Maria De Lourdes","1990-10-03","CHAPECÓ","F",2020
+147,"Elaine Cristina","Maria De Lourdes","1997-04-30","João Pessoa","M",2019
+148,"RODRIGO COSTA","TEREZA CRISTINA","1988-02-16","BOA VISTA","F",2016
+149,"leandro duarte","FRaNciSca nUNEs","1981-09-28","itajaí","F",2016
+150,"Maria Aparecida","HELENA MOURA","1970-04-05","balneário camboriú","M",2013
+151,"marcela freitas","Sonia Regina","1984-07-28","Dourados","F",2021
+152,"PRISCILA FIGUEIREDO","Raimunda Carvalho","1997-09-27","Blumenau","M",2022
+153,"EDUARDO SANTOS","Elza Rocha","2000-11-21","Maceió","M",2014
+154,"TIAGO LIMA","MARTA CRISTINA","1978-03-18","nITeRói","F",2022
+155,"GABRIELA ALMEIDA","Helena Moura","1978-04-15","balneário camboriú","F",2014
+156,"letícia andrade","Ana Lúcia","1973-11-18","PONTA GROSSA","F",2013
+157,"tiago lima","Raimunda Carvalho","1981-07-23","ITAJAÍ","F",2018
+158,"marcos paulo","JOSEFA SANTOS","1984-12-01","Macapá","M",2013
+159,"TATIANE MENDES","Zilda Gomes","1995-05-07","Santos","M",2023
+160,"rodrigo costa","Rita De Cássia","1980-07-15","noVA iGUaçU","F",2010
+161,"rodrigo costa","Ana Lúcia","2005-09-01","CAMPO GRANDE","M",2019
+162,"Gabriela Almeida","ZilDA GOMeS","2004-09-19","Ponta Grossa","M",2014
+163,"IGOR BaRrOs","Conceição Santos","2000-05-05","fortaleza","M",2023
+164,"Letícia Andrade","ÂNgEla mAriA","2000-08-01","Rondonópolis","F",2012
+165,"Tatiane Mendes","Jurema Gonçalves","1992-12-26","caMpinA gRAnDE","M",2020
+166,"RENATA LIMA","VERA LÚCIA","2003-12-08","Aracaju","M",2019
+167,"Marcela Freitas","FRANCISCA NUNES","1973-04-15","São José Dos Campos","F",2022
+168,"Cláudio Henrique","Ivone Marques","1999-11-05","Caruaru","M",2018
+169,"elaine cristina","IVOnE MaRQUes","1975-06-10","Joinville","M",2019
+170,"priscila figueiredo","ELZA ROCHA","2001-06-14","Londrina","M",2020
+171,"CAMILA PEREIRA","Neide Oliveira","1985-08-31","nItERÓi","F",2014
+172,"Eduardo Santos","noêmia pires","1997-03-10","Recife","F",2013
+173,"Helena Castro","elisangela pereira","1999-10-06","duque de caxias","M",2023
+174,"cArOLINa briTo","JOSEFA SANTOS","1982-03-21","BALNEÁRIO CAMBORIÚ","F",2023
+175,"Roberta Nunes","maria de lourdes","2001-02-26","teresina","M",2018
+176,"Rafael Almeida","Neide Oliveira","1992-07-08","MARABÁ","F",2013
+177,"CAMILA PEREIRA","Luzia Helena","1994-02-08","Maringá","F",2012
+178,"julIana sanTos","RAIMUNDA CARVALHO","1982-10-01","criciúma","M",2017
+179,"CAMILA PEREIRA","maria de lourdes","1994-06-03","anápolis","F",2010
+180,"André Luiz","Sonia Regina","1996-03-06","Uberaba","F",2018
+181,"Marcela Freitas","Elisangela Pereira","1998-01-25","canoas","F",2013
+182,"Ana Maria","frANCISca nunEs","1980-06-15","BETIM","M",2014
+183,"camila pereira","TEReZA criStINa","1998-08-28","MARINGÁ","M",2020
+184,"Igor Barros","Raimunda Carvalho","1970-01-20","NITERÓI","M",2012
+185,"GABRIELA ALMEIDA","zilda gomes","2003-10-26","Passo Fundo","M",2013
+186,"mAriA APArECiDA","ELISANGELA PEREIRA","1989-07-07","PONTA GROSSA","F",2020
+187,"MARCELA FREITAS","RITA DE CÁSSIA","1990-08-26","GOIÂNIA","M",2011
+188,"Fernanda Souza","jUrEMa GonçalvEs","1975-01-19","Macapá","M",2016
+189,"bruna carvalho","vera lúcia","1998-05-21","SorOcABA","M",2012
+190,"JOÃO SILVA","SONIA REGINA","1975-01-26","SÃO JOSÉ DOS CAMPOS","F",2018
+191,"lEtÍcIa AnDRaDe","Raimunda Carvalho","1970-10-26","UBERLÂNDIA","F",2022
+192,"André Luiz","ÂNGELA MARIA","1991-07-22","Santa Maria","F",2023
+193,"Patrícia Moraes","Sonia Regina","1978-01-28","camaÇarI","F",2013
+194,"anA MArIA","Elza Rocha","2001-02-20","Camaçari","M",2023
+195,"HELENA CASTRO","MARIA DE LOURDES","1992-04-24","vitória da conquista","M",2011
+196,"MARCela FREITAS","Sonia Regina","1996-05-26","FOZ DO IGUAÇU","F",2010
+197,"LETÍCIA ANDRADE","Vera Lúcia","1982-06-05","chapecó","F",2016
+198,"lúCiA HelENa","Vera Lúcia","1988-05-17","Anápolis","F",2014
+199,"BRUNA CARVALHO","Ivone Marques","2004-12-19","boa vista","M",2021
+200,"TIAGO LIMA","SONIA REGINA","1981-07-08","PALMAS","M",2021
+201,"PAULO HENRIQUE","ÂNGELA MARIA","1996-06-27","PORTO ALEGRE","F",2012
+202,"juliAnA SaNTos","MARIA DE LOURDES","1983-04-19","Londrina","F",2011
+203,"Mário Augusto","IOLANDA RIBEIRO","1984-04-09","ARACAJU","M",2012
+204,"FÁBIO MARTINS","Elisangela Pereira","2004-01-21","Campo Grande","M",2018
+205,"João Silva","ANA LÚCIA","1973-06-28","RIO DE JANEIRO","M",2013
+206,"LUIZ FERNANDO","Tereza Cristina","1995-06-04","Caruaru","F",2020
+207,"gabriela almeida","Marta Cristina","1970-08-05","ILHÉUS","F",2013
+208,"BEATRIZ OLIVEIRA","MARIA DE LOURDES","1971-12-18","Santa Maria","F",2019
+209,"DIEGO MOREIRA","Noêmia Pires","2001-12-07","CaMPOs dOS goYTACAZeS","F",2022
+210,"roberta nunes","Iolanda Ribeiro","1990-05-26","fortaleza","F",2010
+211,"FábIO maRTInS","ÂNGELA MARIA","1976-08-03","Santos","M",2017
+212,"BRUNA CARVALHO","Luzia Helena","1978-02-25","petrópolis","M",2010
+213,"Natália Pires","NEIDE OLIVEIRA","1973-10-04","GUARULHOS","M",2019
+214,"Igor Barros","roseli souza","1997-01-18","Salvador","M",2021
+215,"Danilo Teixeira","TEREZA CRISTINA","1980-02-11","CARUARU","F",2016
+216,"Elaine Cristina","CARLA MOREIRA","1970-10-25","Ribeirão Preto","M",2013
+217,"mário augusto","Josefa Santos","1998-12-14","Jaboatão Dos Guararapes","F",2012
+218,"sérgio ribeiro","ROSELI SOUZA","1972-11-02","ponta grossa","F",2019
+219,"RENATA LIMA","MARTA CRISTINA","1995-08-20","Fortaleza","F",2020
+220,"ROBERTA NUNES","zilda gomes","1985-06-10","rio de janeiro","M",2018
+221,"Cláudio Henrique","ELISANGELA PEREIRA","2000-07-10","Betim","M",2015
+222,"Letícia Andrade","MARTA CRISTINA","1985-06-09","Vitória Da Conquista","M",2021
+223,"elaine cristina","helENa MOurA","1978-10-25","JUAZEIRO","F",2021
+224,"Beatriz OLIVeiRA","ÂngelA MArIa","1993-02-03","MARABÁ","M",2021
+225,"FELIPE ARAÚJO","Raimunda Carvalho","1994-09-18","chapecó","F",2011
+226,"Leandro Duarte","JOSEFA SANTOS","1983-07-08","Maceió","M",2018
+227,"FÁBIO MARTINS","Josefa Santos","1975-05-08","palmas","M",2013
+228,"DANILO TEIXEIRA","RAIMUNDA CARVALHO","1997-10-03","foz do iguaçu","F",2022
+229,"ANa marIA","ApaReCIda SIlva","1999-12-02","Campos Dos Goytacazes","M",2017
+230,"Rodrigo Costa","Roseli Souza","2004-06-03","UBERLÂNDIA","F",2023
+231,"Rafael Almeida","CARLA MOREIRA","2005-03-08","nova iguaçu","F",2021
+232,"Gabriela Almeida","VERA LÚCIA","1993-04-04","Curitiba","F",2022
+233,"LUIZ feRNaNdo","ANA lúcia","2005-12-28","Maceió","M",2023
+234,"leandro duarte","Francisca Nunes","1985-10-07","NOVA IGUAÇU","M",2010
+235,"César Augusto","vera lúcia","1986-11-03","rio de janeiro","F",2016
+236,"carolina brito","rita de cássia","1971-04-13","Vitória Da Conquista","F",2016
+237,"Roberta Nunes","ZilDA gOMeS","1985-11-14","Campinas","F",2016
+238,"BEATRIZ OLIVEIRA","Zilda Gomes","1979-11-15","salvador","M",2018
+239,"PAULO HENRIQUE","Elisangela Pereira","1972-06-16","Belo Horizonte","F",2011
+240,"EDUARDO SANTOS","jurema gonçalves","1983-02-19","curitiba","M",2021
+241,"helena castro","elza rocha","2000-06-27","BLUMENAU","M",2015
+242,"MARCOS PAULO","Carla Moreira","1971-06-12","Duque De Caxias","F",2011
+243,"sérgio ribeiro","cONcEIçãO sAnTOs","1974-10-21","Duque De Caxias","M",2014
+244,"Roberta Nunes","mAriA dE LouRdEs","1977-06-08","caruaru","M",2020
+245,"mário augusto","Carla Moreira","1991-05-12","rio branco","M",2018
+246,"Rafael Almeida","ROSELI SOUZA","2004-09-29","ananindeua","F",2022
+247,"GABRIELA ALMEIDA","NOÊMIA PIRES","1997-07-01","Foz Do Iguaçu","M",2013
+248,"daNILO tEIxeIRa","ZILDA GOMES","1970-12-17","vitória da conquista","F",2022
+249,"CÉSAR AUGUSTO","Ana Lúcia","1998-02-16","SANTA MARIA","M",2021
+250,"JUlIaNa sANTos","LUZIA HELENA","1974-02-11","SÃo JosÉ DoS cAmPOs","F",2015
+251,"Aline Gomes","FRANCISCA NUNES","1996-06-27","londrina","M",2010
+252,"Renata Lima","IVONE MARQUES","2001-11-10","NATAL","F",2019
+253,"Mário Augusto","neIDE oLIveirA","1970-08-22","Natal","M",2016
+254,"RAFAEL ALMEIDA","Tereza Cristina","1999-05-14","Londrina","M",2018
+255,"GUSTAVO ROCHA","Vera Lúcia","1992-05-29","PEtRolINa","F",2023
+256,"Gabriela Almeida","mArtA CrIsTINA","1978-12-07","Rondonópolis","F",2017
+257,"Felipe Araújo","Vera Lúcia","1973-10-14","sInOP","F",2021
+258,"CAROlInA BRItO","Vera Lúcia","1972-07-28","santa maria","F",2015
+259,"césar augusto","CONCEIÇÃO SANTOS","2004-04-09","criciúma","M",2015
+260,"SÉRGIO RIBEIRO","Francisca Nunes","1973-05-07","salvador","F",2011
+261,"Fábio Martins","Noêmia Pires","1976-09-14","Maringá","F",2010
+262,"helena castro","elisangela pereira","1995-05-22","brasília","F",2022
+263,"FELIPE ARAÚJO","Josefa Santos","2003-02-09","Santarém","F",2017
+264,"Simone Alves","Tereza Cristina","1979-10-14","Boa vistA","F",2010
+265,"Felipe Araújo","Raimunda Carvalho","1975-08-04","Belo Horizonte","M",2011
+266,"Lúcia Helena","ZILDA GOMES","1987-04-13","TERESINA","M",2023
+267,"mÁrio aUguSto","RITA DE CÁSSIA","1973-12-25","Campo Grande","M",2019
+268,"TIAGO LIMA","Iolanda Ribeiro","1992-01-13","Recife","F",2010
+269,"Natália Pires","rAIMUnDa CArVaLho","1993-04-05","CAMPO GRANDE","M",2010
+270,"paulo henrique","Zilda Gomes","2002-04-10","Petrópolis","F",2010
+271,"rodrigo costa","Tereza Cristina","1994-06-22","maringá","M",2013
+272,"Patrícia Moraes","Josefa Santos","2000-04-12","petrópolis","M",2015
+273,"Tiago Lima","Luzia heleNA","1990-02-11","Belém","F",2021
+274,"FÁBio mArTins","JOSEFA SANTOS","1983-12-06","RECIFE","F",2021
+275,"Letícia Andrade","Roseli Souza","1970-08-28","ITABUNA","F",2012
+276,"Maria Aparecida","Maria De Lourdes","1998-04-07","Uberaba","F",2023
+277,"TATIANE MENDES","ZILDA GOMES","2003-08-05","criciúma","M",2014
+278,"leandro duarte","Marta Cristina","1972-10-09","salvador","F",2022
+279,"eduardo santos","Jurema Gonçalves","1982-11-09","FOZ DO IGUAÇU","M",2011
+280,"Marcela Freitas","LUZIA HELENA","1970-04-30","BRASÍLIA","M",2011
+281,"EDUARDO SANTOS","Ivone Marques","1991-02-05","Osasco","F",2022
+282,"Bruna Carvalho","Rita De Cássia","1993-11-03","VITÓRIA","F",2022
+283,"carolina brito","RITA DE CÁSSIA","2000-05-23","João Pessoa","M",2020
+284,"Natália Pires","Rita De Cássia","1990-10-17","Lauro De Freitas","F",2023
+285,"DANILO TEIXEIRA","NEIDE OLIVEIRA","1995-12-24","Porto Velho","M",2020
+286,"FELIPE ARAÚJO","Raimunda Carvalho","1973-07-25","Paulista","M",2017
+287,"ROBERTA NUNES","zilda gomes","1989-09-13","PASSO FUNDO","F",2021
+288,"RAFAEL ALMEIDA","josefa santos","1991-06-19","Teresina","F",2010
+289,"igor BaRRoS","josefa santos","1996-05-17","CamAçari","F",2018
+290,"rodrigo costa","raimunda carvalho","1989-01-31","CAMPINA GRANDE","F",2013
+291,"GABRIELA ALMEIDA","ROSELI SOUZA","1985-12-21","APARECIDA DE GOIÂNIA","F",2015
+292,"Igor Barros","IOLANDA RIBEIRO","1987-02-12","MACAPÁ","F",2018
+293,"DIEGO MOREIRA","Rita De Cássia","1974-11-01","Joinville","F",2019
+294,"Carolina Brito","APARECIDA SILVA","1972-10-03","feira de santana","M",2011
+295,"cláudio henrique","Vera Lúcia","1974-06-16","PALMAS","M",2017
+296,"pRisCIla FiGuEIREdo","Neide Oliveira","1997-01-30","maringá","M",2020
+297,"Danilo Teixeira","neide oliveira","1987-09-18","santa maria","F",2017
+298,"SÉRGIO RIBEIRO","francisca nunes","1996-10-05","PALMas","M",2022
+299,"simone alves","Josefa Santos","1990-10-23","Blumenau","F",2010
+300,"Paulo Henrique","Aparecida Silva","1993-10-29","pONTa gROSSA","F",2014
+301,"SIMONE ALVES","Elza Rocha","1984-06-21","CASCAVEL","M",2017
+302,"Marcos Paulo","Ana Lúcia","1999-04-15","Osasco","F",2013
+303,"Marcela Freitas","JUREMA GONÇALVES","1977-10-25","NaTAl","M",2012
+304,"Priscila Figueiredo","marta cristina","1992-02-20","NATAL","F",2013
+305,"Luiz Fernando","rAimUNDA caRvALHo","1978-10-10","Criciúma","M",2010
+306,"viviane ramos","Ângela Maria","1980-11-17","Ponta Grossa","F",2016
+307,"ANDRé LUIz","MARIA DE LOURDES","1990-07-27","MACEIÓ","M",2022
+308,"helena castro","Luzia Helena","2000-12-31","Aracaju","F",2021
+309,"MARIA APARECIDA","ÂNGELA MARIA","1987-03-17","LONDRINA","F",2014
+310,"Gabriela Almeida","Marta Cristina","1993-10-17","CURITIBA","F",2012
+311,"João Silva","JOSefa sANtOS","1976-12-10","UBERLÂNDIA","F",2014
+312,"IGOR BARROS","carla moreira","1979-11-22","anápolis","M",2014
+313,"DIEGO MOREIRA","zILDa gOmES","1981-11-12","goiânia","M",2020
+314,"ROBERTA NUNES","NOÊMIA PIRES","1985-08-05","OLINDA","F",2019
+315,"ELAINE CRISTINA","ROSELI SOUZA","1999-03-16","CANOAS","M",2018
+316,"Juliana Santos","TEREZA CRISTINA","1995-12-01","dourados","F",2022
+317,"tIAgO LiMa","carlA MoREIra","1989-09-22","vitória da conquista","M",2013
+318,"paulo henrique","Iolanda Ribeiro","1984-05-12","Campo Grande","F",2013
+319,"gabriela almeida","Carla Moreira","1981-04-01","FLORIANÓPOLIS","F",2018
+320,"luiz fernando","HELENA MOURA","1984-09-21","Ilhéus","F",2023
+321,"FÁBIO MARTINS","RAIMUNDA CARVALHO","1987-08-27","maceió","M",2017
+322,"SIMONE ALVES","Roseli Souza","1999-05-29","SANTOS","M",2020
+323,"Tiago Lima","ELISANGELA PEREIRA","1978-08-15","Belém","M",2019
+324,"juliana santos","FRANCISCA NUNES","1982-03-22","SINOP","M",2020
+325,"GUSTAVO ROCHA","Ivone Marques","1985-09-23","aparecida de goiânia","F",2022
+326,"Beatriz Oliveira","Zilda Gomes","1973-10-07","itabuna","F",2020
+327,"JOÃO SILVA","Marta Cristina","1987-06-26","RECIFE","M",2014
+328,"Sérgio Ribeiro","Elza Rocha","2000-04-10","SÃO PAULO","M",2020
+329,"ROBERTA NUNES","FRANCISCA NUNES","1984-09-21","campos dos goytacazes","F",2018
+330,"cÉSaR auGustO","Sonia Regina","1980-05-01","campinas","F",2020
+331,"leandro duarte","Vera Lúcia","1977-09-02","Aparecida De Goiânia","F",2014
+332,"aline gomes","Roseli Souza","1971-12-16","CAMPO GRANDE","M",2020
+333,"camila pereira","Zilda Gomes","2003-09-24","pELOtAs","F",2011
+334,"LUIZ FERNANDO","Carla Moreira","1982-02-06","ilhéus","M",2012
+335,"GUSTAVO ROCHA","rita de cássia","1981-10-15","PONTA GROSSA","F",2023
+336,"CAMILA PEREIRA","jurema gonçalves","2003-08-28","maceió","F",2016
+337,"HELeNA casTRO","Luzia Helena","1979-07-14","Boa Vista","M",2022
+338,"Tiago Lima","Francisca Nunes","1977-03-20","Sorocaba","F",2018
+339,"LETÍCIA ANDRADE","Josefa Santos","1970-10-23","FEIRA DE SANTANA","F",2013
+340,"Cláudio Henrique","maria de lourdes","1999-08-23","belo horizonte","M",2015
+341,"TiagO LIMa","coNceiÇÃO sANtoS","1985-07-08","PASSO FUNDO","M",2014
+342,"leandro duarte","Marta Cristina","1999-05-08","PONTA GROSSA","F",2017
+343,"Carlos Eduardo","elza rocha","1984-09-06","BALNEÁRIO CAMBORIÚ","M",2018
+344,"fábio martins","vera lúcia","1980-07-28","Aparecida De Goiânia","F",2015
+345,"renata lima","Sonia Regina","2003-10-24","Joinville","F",2021
+346,"viviane ramos","Maria De Lourdes","1973-05-27","Vitória","F",2010
+347,"IGOR BARROS","Zilda Gomes","2003-01-09","lauro de freitas","F",2019
+348,"SérGIo RIbEiRO","mAriA dE lourDEs","2004-08-26","canoas","M",2012
+349,"SIMONE ALVES","ÂNGELA MARIA","2002-06-06","chapecó","F",2015
+350,"GUSTAVO ROCHA","josefa santOs","1989-08-09","joão pessoa","M",2021
+351,"Lúcia Helena","MARTA CRISTINA","1987-04-21","Criciúma","M",2011
+352,"Simone Alves","Roseli Souza","1991-01-19","GOIÂNIA","F",2015
+353,"FÁBIO MARTINS","ELISANGELA PEREIRA","1982-12-11","ARAPIRACA","F",2012
+354,"HELENA CASTRO","CONCEIÇÃO SANTOS","1986-04-19","Osasco","F",2019
+355,"césar augusto","APARECIDA SILVA","2005-12-12","Betim","F",2021
+356,"VIVIANE RAMOS","maria de lourdes","1983-04-18","SINOP","F",2010
+357,"FÁBIO MARTINS","Zilda Gomes","1999-04-20","BELÉM","F",2019
+358,"MARIA APARECIDA","ELZA ROCHA","1975-06-13","FEIRA DE SANTANA","F",2011
+359,"Danilo Teixeira","ÂNgElA MARiA","2000-07-02","lauro de freitas","M",2016
+360,"Juliana Santos","Carla Moreira","2001-03-21","BALNEÁRIO CAMBORIÚ","M",2017
+361,"RAFAEL ALMEIDA","tereza cristina","1983-10-30","CAXIAS DO SUL","M",2020
+362,"LÚCIA HELENA","carla moreira","2001-11-25","UBERlÂNdIa","F",2019
+363,"marcelA frEITAS","Iolanda Ribeiro","1981-04-28","Passo Fundo","F",2019
+364,"MARCOS PAULO","ana lúcia","1999-03-12","camaçari","M",2012
+365,"rodrIGO Costa","conceição santos","1995-12-25","LAURO DE FREITAS","M",2021
+366,"césar augusto","raimunda carvalho","2004-09-06","maceió","M",2022
+367,"ana maria","Vera Lúcia","1986-07-18","Londrina","F",2018
+368,"MÁRIO AUGUSTO","ANA LÚCIA","1997-01-15","Florianópolis","M",2020
+369,"Tiago Lima","NeIDe OlivEIrA","1986-08-03","joão pessoa","M",2014
+370,"Patrícia Moraes","Iolanda Ribeiro","1982-02-23","GOIÂNIA","M",2022
+371,"Sérgio Ribeiro","Ivone Marques","1971-10-15","PAULISTA","F",2013
+372,"Ana Maria","JOSEFA SANTOS","1994-03-28","são josé dos campos","M",2012
+373,"elaine cristina","ANA LÚCIA","2003-03-20","Ponta Grossa","M",2018
+374,"CARLOS EDUARDO","Vera Lúcia","1973-09-04","UBERLÂNDIA","M",2011
+375,"JOÃO SILVA","Jurema Gonçalves","1996-12-12","SãO PauLO","F",2021
+376,"Danilo Teixeira","josefa santos","1992-06-09","CASCAVEL","F",2014
+377,"Marcos Paulo","SONIA REGINA","1981-08-07","palmas","M",2023
+378,"CÉSAR AUGUSTO","MARTA CRISTINA","1983-10-19","CaMpina GRanDe","M",2020
+379,"roBERTA NUnES","JUREMA GONÇALVES","1989-01-08","boa vista","M",2012
+380,"Leandro Duarte","MARIA DE LOURDES","1997-03-31","Natal","M",2015
+381,"aliNe GoMes","Josefa Santos","1976-11-24","Goiânia","F",2023
+382,"carolina brito","TEREZA CRISTINA","1993-05-30","cuIAbÁ","M",2022
+383,"Roberta Nunes","ELISANGELA PEREIRA","1984-09-30","ITAJAÍ","M",2012
+384,"juliana santos","Conceição Santos","1988-06-21","CAMPINA GRANDE","F",2018
+385,"eduardo santos","CaRlA MOREIRa","2000-05-26","Londrina","F",2010
+386,"JOÃO SILVA","IVONE MARQUES","1970-04-13","sorocaba","F",2021
+387,"marCela FREitas","IOlaNDA riBeIRO","1990-10-18","goiânia","M",2016
+388,"Luiz Fernando","jurema gonçalves","1975-10-15","CUIABÁ","F",2020
+389,"TIAGO LIMA","RAIMUNDA CARVALHO","1979-12-06","são josé dos campos","F",2016
+390,"IGOR BARROS","Josefa Santos","1977-11-14","Campinas","F",2013
+391,"maurício souza","Ana Lúcia","1978-12-07","Boa Vista","M",2011
+392,"ROBERTA NUNES","ELISANGELA PEREIRA","1985-03-02","Caxias Do Sul","F",2023
+393,"Letícia Andrade","ana lúcia","1981-04-02","MACAPÁ","F",2014
+394,"Lúcia Helena","CONCEIÇÃO SANTOS","1980-09-14","Marabá","M",2015
+395,"DIEGO MOREIRA","Noêmia Pires","1996-06-10","João Pessoa","M",2014
+396,"CARLOS EDUARDO","Raimunda Carvalho","1985-05-12","ITaJAí","M",2015
+397,"EDUARDO SANTOS","Marta Cristina","1983-06-14","PETROLINA","F",2011
+398,"JULIANA SANTOS","VERA LÚCIA","1983-05-11","Balneário Camboriú","F",2019
+399,"Maurício Souza","rita de cássia","1985-04-27","Uberaba","M",2016
+400,"ALINE GOMES","FRANCISCA NUNES","1996-03-08","Itabuna","M",2015
+401,"rENATa lImA","luzia helena","1982-05-11","CAMPO GRANDE","F",2023
+402,"patrícia moraes","ELISANGELA PEREIRA","2005-11-01","Juazeiro","F",2019
+403,"TIAGO LIMA","Ana Lúcia","1979-10-26","São Gonçalo","F",2015
+404,"elaine cristina","Josefa Santos","1991-02-12","Recife","M",2013
+405,"aline gomes","ângela maria","1983-02-01","PETROLINA","F",2018
+406,"EdUarDo saNTOS","Vera Lúcia","2000-05-09","Macapá","M",2022
+407,"leandro duarte","Zilda Gomes","1981-10-31","SOrOCabA","F",2014
+408,"bruna carvalho","Ângela Maria","2005-12-23","pEtRópoLis","F",2010
+409,"FÁBIO MARTINS","Sonia Regina","1970-05-12","Itajaí","M",2013
+410,"Gabriela Almeida","Ivone Marques","1983-08-24","Maceió","M",2017
+411,"Beatriz Oliveira","Roseli Souza","2002-12-14","BRASÍLIA","M",2012
+412,"danilo teixeira","Helena Moura","1989-04-02","Rondonópolis","M",2023
+413,"Aline Gomes","FRANCISCA NUNES","2001-01-01","SÃO PAULO","M",2018
+414,"GUSTAVO ROCHA","JUREMA GONÇALVES","2002-05-20","itaJAí","F",2019
+415,"Tiago Lima","IOLANDA RIBEIRO","2005-10-23","Uberaba","M",2013
+416,"André Luiz","Zilda Gomes","1973-08-27","Caxias Do Sul","M",2022
+417,"DAnIlO TeIXEiRa","MARIA DE LOURDES","1979-07-22","Teresina","F",2016
+418,"ANA MARIA","ZILDA GOMES","1987-09-19","BRASÍLIA","F",2019
+419,"RAFAEL ALMEIDA","Elza Rocha","1998-01-20","Chapecó","F",2018
+420,"Cláudio Henrique","conceição santos","1974-01-26","CAMPINA GRANDE","M",2016
+421,"Renata Lima","IVONE MARQUES","1986-06-10","NATAL","F",2023
+422,"tiago lima","Francisca Nunes","1983-11-25","SãO luís","F",2014
+423,"Cláudio Henrique","ÂNGELA MARIA","2000-11-12","Aparecida De Goiânia","M",2018
+424,"BEATRIZ OLIVEIRA","hElENA MOURA","1997-04-08","Sorocaba","M",2012
+425,"CAMILA PEREIRA","carLA MoREIRa","1972-11-26","dourados","F",2011
+426,"FERNANDA SOUZA","Carla Moreira","1986-07-07","juazeiro","F",2010
+427,"Carolina Brito","Elza Rocha","1996-02-04","OSASCO","F",2014
+428,"Lúcia Helena","Jurema Gonçalves","1979-02-18","Ananindeua","M",2015
+429,"TIAGO LIMA","aparecida silva","1993-03-18","campinas","M",2012
+430,"eduardo santos","Iolanda Ribeiro","1994-05-26","juazeiro","F",2022
+431,"ROBERTA NUNES","RITA DE CÁSSIA","1997-03-30","blumenau","M",2012
+432,"Fábio Martins","IVONE MARQUES","1982-06-27","Rondonópolis","M",2020
+433,"nAtÁlIA PiRes","Helena Moura","1975-07-23","Juazeiro","M",2022
+434,"BRUNA CARVALHO","ELISANGELA PEREIRA","1973-11-26","VItÓRiA Da ConQuIsta","F",2019
+435,"Simone Alves","Jurema Gonçalves","1982-10-18","Blumenau","F",2018
+436,"BRUNA CARVALHO","Roseli Souza","1995-05-24","Anápolis","M",2018
+437,"João Silva","Roseli Souza","1975-01-22","são gonçalo","M",2014
+438,"PRISCILA FIGUEIREDO","MARTA CRISTINA","2002-02-13","PONTA GROSSA","M",2012
+439,"FELIPE ARAÚJO","MARIA DE LOURDES","2004-07-17","brasília","F",2023
+440,"Viviane Ramos","Elza Rocha","1982-10-01","Foz Do Iguaçu","M",2017
+441,"JOÃO SILVA","ZILDA GOMES","1985-01-08","aRaPirACA","M",2016
+442,"tiago lima","sonia regina","1978-01-16","Criciúma","M",2020
+443,"Felipe Araújo","aNa lúciA","2004-03-14","santos","F",2016
+444,"César Augusto","ÂNGELA MARIA","2000-05-05","Aracaju","F",2010
+445,"Paulo Henrique","Iolanda Ribeiro","1972-12-07","LONDRINA","F",2012
+446,"GUSTAVO ROCHA","carLa moreira","1990-07-30","Ribeirão Preto","M",2011
+447,"Diego Moreira","Elisangela Pereira","1981-06-20","São José Dos Campos","F",2019
+448,"Cláudio Henrique","Helena Moura","1979-12-14","São Paulo","M",2023
+449,"CÉSaR augUSTO","Luzia Helena","1993-11-02","manaus","F",2023
+450,"NATÁLIA PIRES","RITA DE CÁSSIA","1986-03-12","Uberaba","F",2023
+451,"DIEGO MOREIRA","helENA MoURA","1995-08-10","arapiRACA","M",2018
+452,"HeLena CAstRO","Elisangela Pereira","1970-04-03","maRinGÁ","M",2022
+453,"Elaine Cristina","vera lúcia","1974-10-11","CAMAÇARI","M",2018
+454,"Cláudio Henrique","Tereza Cristina","1989-05-13","Chapecó","F",2014
+455,"Tatiane Mendes","MARIA DE LOURDES","1987-05-31","Camaçari","F",2010
+456,"césar augusto","SONIA REGINA","1979-12-01","São Luís","F",2010
+457,"LEandRO DuaRTE","Zilda Gomes","1972-08-10","Campinas","F",2022
+458,"viviane ramos","FRANCISCA NUNES","1970-08-27","FLORIANÓPOLIS","F",2011
+459,"Felipe Araújo","NOÊMIA PIRES","1997-05-10","criciúma","M",2016
+460,"ELAINE CRISTINA","ELZA ROCHA","1984-08-24","Cuiabá","M",2014
+461,"ELAINE CRISTINA","zilda gomes","1991-01-07","canoas","M",2017
+462,"renata lima","MARTA CRISTINA","2001-05-26","niterói","F",2023
+463,"Igor Barros","JOSEFA SANTOS","1990-11-14","PORTO VELHO","F",2017
+464,"LÚCIA HELENA","APARECIDA SILVA","1974-12-28","Caxias Do Sul","M",2018
+465,"aline gomes","ELZA ROCHA","1997-08-28","BluMEnaU","M",2013
+466,"César Augusto","helena moura","1986-05-06","SÃo paUlO","M",2016
+467,"Mário Augusto","Noêmia Pires","1990-10-23","BRASÍLIA","M",2019
+468,"Simone Alves","Ângela Maria","1991-10-17","Rio De Janeiro","M",2023
+469,"Cláudio Henrique","FranCISca nUnes","2001-06-20","JABOATÃO DOS GUARARAPES","F",2010
+470,"LUIZ FERNANDO","TEREZA CRISTINA","1992-05-11","Boa Vista","F",2019
+471,"Felipe Araújo","ANA LÚciA","1980-01-25","Balneário Camboriú","F",2022
+472,"Igor Barros","Maria De Lourdes","2002-05-06","PAULISTA","M",2013
+473,"rafael almeida","Jurema Gonçalves","1970-11-05","TERESINA","M",2020
+474,"MAURÍCIO SOUZA","jurema gonçalves","1978-08-24","Santarém","M",2012
+475,"CLÁUDIO HENRIQUE","Tereza Cristina","1992-04-21","sorocaba","M",2010
+476,"RoDRiGo COSta","roseli souza","1994-07-13","Blumenau","M",2015
+477,"Maria Aparecida","Neide Oliveira","1994-07-03","canoAs","M",2019
+478,"DANILO TEIXEIRA","Iolanda Ribeiro","1997-06-23","RIO branCo","F",2020
+479,"Cláudio Henrique","elisangela pereira","1997-05-04","NITERÓI","M",2020
+480,"tatiane mendes","RiTa DE CÁssIa","1989-07-22","Manaus","M",2023
+481,"Gabriela Almeida","francisca nunes","1975-09-23","Ribeirão Preto","F",2023
+482,"cláudio henrique","SONIA REGINA","1983-09-14","RIBeIRÃO prEtO","F",2022
+483,"Bruna Carvalho","Carla Moreira","2003-03-20","Manaus","M",2014
+484,"bruNA caRvaLho","Vera Lúcia","1981-08-24","fortaleza","M",2017
+485,"Cláudio Henrique","Noêmia Pires","1995-12-07","rondonópolis","F",2018
+486,"Cláudio Henrique","Carla Moreira","2003-08-07","Rondonópolis","F",2011
+487,"FeRNANDA sOUZA","ELZA ROCHA","1993-12-16","Canoas","M",2014
+488,"CLÁUDIO HENRIQUE","carla moreira","2004-11-14","sÃo jOSé doS cAmpoS","M",2013
+489,"Danilo Teixeira","RAIMUNDA CARVALHO","1998-05-23","Florianópolis","F",2011
+490,"DanILO teiXEirA","Jurema Gonçalves","1998-08-18","Guarulhos","M",2010
+491,"FERNANDA SOUZA","Ivone Marques","1997-11-14","duquE De cAXIAs","M",2021
+492,"Marcela Freitas","Elza Rocha","1997-05-04","BELÉM","M",2023
+493,"Letícia Andrade","Roseli Souza","1974-11-09","Belo Horizonte","F",2013
+494,"Aline Gomes","IoLandA ribeIrO","2001-01-08","Betim","F",2016
+495,"MÁRIO AUGUSTO","conceição santos","1991-07-18","cascavel","M",2010
+496,"Tiago Lima","IVONE MARQUES","2000-11-16","Canoas","F",2014
+497,"rafael almeida","Iolanda Ribeiro","1983-10-15","Blumenau","F",2017
+498,"eduardo santos","Helena Moura","1995-10-11","LaUrO De FreItAS","F",2020
+499,"alINe gOMes","conceição santos","1990-08-27","Feira De Santana","M",2017
+500,"Igor Barros","HELENA MOURA","1979-07-27","palmas","M",2013
