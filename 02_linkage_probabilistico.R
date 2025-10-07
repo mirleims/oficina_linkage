@@ -23,7 +23,7 @@ miss_B <- setdiff(c(cols_block, cols_strcmp), names(df_B))
 if (length(miss_A) > 0) stop("Base A faltando colunas: ", paste(miss_A, collapse = ", "))
 if (length(miss_B) > 0) stop("Base B faltando colunas: ", paste(miss_B, collapse = ", "))
 
-# 3) Harmonizar tipos (evita “Data sets have different format”) ---------------
+# 3) Harmonizar tipos ---------------
 to_char <- function(v) {
   if (inherits(v, "Date")) return(format(v, "%Y-%m-%d"))
   as.character(v)
@@ -72,7 +72,7 @@ rp <- epiClassify(rp, threshold.upper = threshold_upper, threshold.lower = thres
 cat("\nResumo após classificação por limiares:\n")
 print(summary(rp))
 
-# 6) LINKS — compatível com várias versões ----------------------------------
+# 6) LINKS  ----------------------------------
 # Primeiro tenta com o argumento 'show = "links"'.
 links_tbl <- tryCatch(
   getPairs(rp, single.rows = TRUE, show = "links"),
@@ -106,7 +106,5 @@ if (!is.null(links_tbl) && nrow(links_tbl) > 0) {
   write.csv(data.frame(),"3_results/linkage/matches_links.csv", row.names = FALSE)
 }
 
-# Salva o objeto rp para reuso
-saveRDS(rp, file = file.path("3_results/linkage/rp_object.rds"))
 
 message("✔ Comparação concluída.")

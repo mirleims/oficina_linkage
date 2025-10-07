@@ -14,7 +14,11 @@ library(abjutils) # normalizar texto (ex.: remover acentos)
 
 # ----------------------------
 # 1) Carregar dados
-# ----------------------------
+# ---------------------------
+dir.create("2_refined_data", showWarnings = FALSE, recursive = TRUE)
+dir.create("3_results", showWarnings = FALSE, recursive = TRUE)
+dir.create("3_results/linkage", showWarnings = FALSE, recursive = TRUE)
+
 df_A <- read.csv("1_raw_data/dataset_A.csv", stringsAsFactors = FALSE) 
 df_B <- read.csv("1_raw_data/dataset_B.csv", stringsAsFactors = FALSE)
 
@@ -100,7 +104,7 @@ df_A$nome_mae <- harmonizacao(df_A$nome_mae)
 df_B$nome     <- harmonizacao(df_B$nome)
 df_B$nome_mae <- harmonizacao(df_B$nome_mae)
 
-# Datas como Date (com parse seguro)
+# Datas como Date (com parse)
 df_A$data_nascimento <- parse_date_safe(df_A$data_nascimento)
 df_B$data_nascimento <- parse_date_safe(df_B$data_nascimento)
 
