@@ -3,90 +3,91 @@
 library(dplyr)
 library(readr)
 library(ggplot2)
-library(pROC)   # para ROC/AUC
 
-PAIRS_F   <- "3_results/linkage/pairs_ranked.csv"  # candidatos + Weight
-TRUTH_F   <- "1_raw_data/truth_pairs.csv"          # id_A,id_B (opcional)
-THRESHOLD <- 0.85                                  # ajuste seu corte
+# ==== Parâmetros básicos ====
+THRESHOLD <- 0.85                                   # corte para aceitar link
+LOWER     <- 0.60                                   # zona cinza para revisão
 OUT_DIR   <- "3_results/eval_simple"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
+# ==== 1) Ler pares ranqueados ====
+pairs <- read_csv("3_results/linkage/pairs_ranked.csv", show_col_types = FALSE)
 
-pairs <- read_csv(PAIRS_F, show_col_types = FALSE)
-pairs <- pairs %>% dplyr::rename(id_A = id1, id_B = id2)
+# Se vierem colunas id1/id2 (índices), adapta para id_A/id_B:
+if (all(c("id1","id2") %in% names(pairs)) && !all(c("id_A","id_B") %in% names(pairs))) {
+  pairs <- pairs %>% rename(id_A = id1, id_B = id2)
+}
 
-# top-1 por id_B (decisão única por registro B)
+stopifnot(all(c("id_A","id_B","Weight") %in% names(pairs)))
+
+# ==== 2) Top-1 por id_B e decisão por corte ====
 top1 <- pairs %>%
-  group_by(id_B) %>% slice_max(Weight, n = 1, with_ties = FALSE) %>% ungroup()
+  group_by(id_B) %>%
+  slice_max(Weight, n = 1, with_ties = FALSE) %>%
+  ungroup()
 
 pred_links <- top1 %>% filter(Weight >= THRESHOLD)
+gray_review <- top1 %>% filter(Weight >= LOWER, Weight < THRESHOLD)
 
-# COM PARES VERDADEIROS -------------------------------------------
-#-----------------
-truth <- read_csv(TRUTH_F, show_col_types = FALSE)
-true_keys <- paste(truth$id_A, truth$id_B, sep = "_")
-
-pred_keys <- paste(pred_links$id_A, pred_links$id_B, sep = "_")
-top1_keys <- paste(top1$id_A, top1$id_B, sep = "_")
-
+# ==== 3) Métricas ====
+truth <- read_csv("1_raw_data/truth_pairs.csv", show_col_types = FALSE) %>%
+    mutate(id_A = as.character(id_A), id_B = as.character(id_B))
+  
+pred_keys <- paste(pred_links$id_A, pred_links$id_B)
+top1_keys <- paste(top1$id_A, top1$id_B)
+true_keys <- paste(truth$id_A, truth$id_B)
+  
 TP <- sum(pred_keys %in% true_keys)
 FP <- nrow(pred_links) - TP
 FN <- sum(!(true_keys %in% pred_keys))
-TN <- sum(!(top1_keys %in% true_keys) & !(top1_keys %in% pred_keys))  # negativos corretos no universo top-1
+TN <- sum(!(top1_keys %in% true_keys) & !(top1_keys %in% pred_keys))
+  
+precision <- ifelse(TP+FP == 0, NA, TP/(TP+FP))
+recall    <- ifelse(TP+FN == 0, NA, TP/(TP+FN))
+f1        <- ifelse(is.na(precision)|is.na(recall)|(precision+recall)==0,
+                      NA, 2*precision*recall/(precision+recall))
+  
+tibble(THRESHOLD, TP, FP, FN, TN, precision, recall, f1) %>%
+write_csv(file.path(OUT_DIR, "metrics_with_truth.csv"))
 
-precision <- ifelse(TP+FP==0, NA, TP/(TP+FP))
-recall    <- ifelse(TP+FN==0, NA, TP/(TP+FN))
-f1        <- ifelse(is.na(precision)|is.na(recall)|(precision+recall)==0, NA, 2*precision*recall/(precision+recall))
 
-tibble::tibble(THRESHOLD, TP, FP, FN, TN, precision, recall, f1) %>%
-  readr::write_csv(file.path(OUT_DIR, "metrics_with_truth.csv"))
-
-#------------------------------------Histogramas: score e gap (top1 – top2)
-# --- Histograma de scores (top-1 por id_B) ---------------------------------
-p_scores <- ggplot(top1, aes(x = Weight)) +
+# ==== 4) Gráficos====
+# Histograma dos scores (top-1)
+p1 <- ggplot(top1, aes(Weight)) +
   geom_histogram(bins = 40, na.rm = TRUE) +
   labs(title = "Distribuição de scores (top-1 por id_B)",
        x = "Weight", y = "Contagem")
+ggsave(file.path(OUT_DIR, "hist_scores_top1.png"), p1, width = 6.5, height = 4, dpi = 120)
 
-ggsave(file.path(OUT_DIR, "hist_scores_top1.png"),
-       plot = p_scores, width = 6.5, height = 4, dpi = 120)
 
-# --- Gap top1 - top2 -------------------------------------------------------
-top2 <- pairs %>%
-  dplyr::group_by(id_B) %>%
-  dplyr::slice_max(Weight, n = 2, with_ties = FALSE) %>%
-  dplyr::ungroup() %>%
-  dplyr::group_by(id_B) %>%
-  dplyr::summarise(
-    top1 = dplyr::first(sort(Weight, decreasing = TRUE)),
-    top2 = ifelse(dplyr::n() >= 2, sort(Weight, decreasing = TRUE)[2], NA_real_),
-    gap  = top1 - top2,
-    .groups = "drop"
-  )
+# ==== 5) Salvar saídas principais ====
+write_csv(pred_links, file.path(OUT_DIR, "links_final.csv"))     # aceitos (≥ THRESHOLD)
+write_csv(gray_review, file.path(OUT_DIR, "review_gray.csv"))    # revisar [LOWER, THRESHOLD)
 
-p_gap <- ggplot(top2, aes(x = gap)) +
-  geom_histogram(bins = 40, na.rm = TRUE) +
-  labs(title = "Separação top1 - top2 (maiores gaps = decisão mais fácil)",
-       x = "gap (top1 - top2)", y = "Contagem")
-
-ggsave(file.path(OUT_DIR, "hist_gap_top1_top2.png"),
-       plot = p_gap, width = 6.5, height = 4, dpi = 120)
-
-#---------------CURVA ROC
-y_true <- (top1_keys %in% true_keys) * 1L
-roc_top1 <- roc(response = y_true, predictor = top1$Weight, direction = ">")
-
-roc_df <- tibble::tibble(
-  TPR = roc_top1$sensitivities,
-  FPR = 1 - roc_top1$specificities
-)
-
-ggplot(roc_df, aes(FPR, TPR)) +
-  geom_path() + geom_abline(slope = 1, intercept = 0, linetype = 2) +
-  labs(title = paste0("ROC (top-1) — AUC = ", round(as.numeric(auc(roc_top1)), 4)),
-       x = "FPR (1 - Especificidade)", y = "TPR (Recall)") +
-  ggsave(file.path(OUT_DIR, "roc_top1.png"), width = 6, height = 5, dpi = 120)
 
 #------------------GERANDO BASE FINAL
+df_A <- read.csv("1_raw_data/dataset_A.csv", stringsAsFactors = FALSE) 
+df_B <- read.csv("1_raw_data/dataset_B.csv", stringsAsFactors = FALSE)
 
+links_final <- pred_links %>% 
+  dplyr::select(id_A, id_B, Weight) %>% 
+  mutate(decision = "link")
+
+links_final_df <- links_final %>%
+  dplyr::left_join(df_A, by = "id_A") %>%
+  dplyr::left_join(df_B, by = "id_B", suffix = c(".A", ".B"))
+
+write.csv(links_final_df,"3_results/links_final.csv", row.names = FALSE)
+
+
+gray_review <- top1 %>%
+  dplyr::filter(Weight >= LOWER, Weight < THRESHOLD) %>%
+  dplyr::mutate(decision = "review_gray") %>%
+  dplyr::select(id_A, id_B, Weight, decision)
+
+gray_review_df <- gray_review %>%
+  dplyr::left_join(A, by = "id_A") %>%
+  dplyr::left_join(B, by = "id_B", suffix = c(".A", ".B"))
+
+write.csv(gray_review_df,"3_results/gray_links_final.csv", row.names = FALSE)
 

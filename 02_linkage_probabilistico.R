@@ -38,8 +38,6 @@ common_cols <- c(cols_block, cols_strcmp)
 A_use <- df_A[, common_cols]
 B_use <- df_B[, common_cols]
 
-# (Diagnóstico opcional: classes devem bater)
-# print(rbind(A = sapply(A_use, class), B = sapply(B_use, class)))
 
 # 4) Comparação com blocagem + strcmp ---------------------------------------
 rp <- compare.linkage(
@@ -98,13 +96,8 @@ if (is.null(links_tbl)) {
   links_tbl <- pairs_all[idx, , drop = FALSE]
 }
 
-# Exporta links (vazio se não houver)
-if (!is.null(links_tbl) && nrow(links_tbl) > 0) {
-  write.csv(links_tbl, "3_results/linkage/matches_links.csv", row.names = FALSE)
-} else {
-  warning("Nenhum link classificado acima do limiar. Arquivo salvo vazio.")
-  write.csv(data.frame(),"3_results/linkage/matches_links.csv", row.names = FALSE)
-}
+# Exporta links 
 
+write.csv(links_tbl, "3_results/linkage/matches_links.csv", row.names = FALSE)
 
 message("✔ Comparação concluída.")
