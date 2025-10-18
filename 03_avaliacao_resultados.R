@@ -1,93 +1,108 @@
-# 03_avaliacao_resultados.R 
+# 03_avaliacao_resultados.R
+# --------------------------------------------------------
+# Objetivos:
+# 1) Leitura dos resultados (pares e links)
+# 2) Diagnósticos básicos (contagens, histograma de Weight)
+# 3) Amostra da zona ambígua para revisão (clerical review)
+# 4) Métricas com gabarito (TP/FP/FN e TN opcional)
+# 5) Saídas finais juntando com as bases originais
 
-library(dplyr)
 library(readr)
+library(dplyr)
 library(ggplot2)
+library(tidyr)
 
-# ==== Parâmetros básicos ====
-THRESHOLD <- 0.85                                   # corte para aceitar link
-LOWER     <- 0.60                                   # zona cinza para revisão
-OUT_DIR   <- "3_results/eval_simple"
-dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-# ==== 1) Ler pares ranqueados ====
-pairs <- read_csv("3_results/linkage/pairs_ranked.csv", show_col_types = FALSE)
+THRESHOLD <- 0.85  
+LOWER     <- 0.77 
 
-# Se vierem colunas id1/id2 (índices), adapta para id_A/id_B:
-if (all(c("id1","id2") %in% names(pairs)) && !all(c("id_A","id_B") %in% names(pairs))) {
-  pairs <- pairs %>% rename(id_A = id1, id_B = id2)
-}
 
-stopifnot(all(c("id_A","id_B","Weight") %in% names(pairs)))
+truth <- read_csv("1_raw_data/truth_pairs.csv",show_col_types = FALSE)  
 
-# ==== 2) Top-1 por id_B e decisão por corte ====
-top1 <- pairs %>%
-  group_by(id_B) %>%
-  slice_max(Weight, n = 1, with_ties = FALSE) %>%
-  ungroup()
+# ===================== 1) Leitura =====================
+pairs <- read_csv("3_results/linkage/pairs_ranked.csv" ,show_col_types = FALSE)
+links <- read_csv("3_results/linkage/matches_links.csv", show_col_types = FALSE)
+cat("\n===== DIAGNÓSTICO GERAL =====\n")
+cat("Total de pares candidatos: ", nrow(pairs), "\n")
+cat("Total de links decididos : ", nrow(links), "\n\n")
 
-pred_links <- top1 %>% filter(Weight >= THRESHOLD)
-gray_review <- top1 %>% filter(Weight >= LOWER, Weight < THRESHOLD)
+# ===================== 2) Diagnósticos =====================
+cat("Resumo de 'Weight' (pares candidatos):\n")
+print(summary(pairs$Weight))
 
-# ==== 3) Métricas ====
-truth <- read_csv("1_raw_data/truth_pairs.csv", show_col_types = FALSE) %>%
-    mutate(id_A = as.character(id_A), id_B = as.character(id_B))
-  
-pred_keys <- paste(pred_links$id_A, pred_links$id_B)
-top1_keys <- paste(top1$id_A, top1$id_B)
+p_hist <- ggplot(pairs, aes(Weight)) +
+  geom_histogram(bins = 40) +
+  labs(title = "Distribuição de Weight (pares candidatos)",
+       x = "Weight", y = "Frequência")
+ggsave(file.path("3_results/hist_pesos_pairs.png"),
+       p_hist, width = 7, height = 5, dpi = 120)
+
+# ===================== 3) Amostra p/ revisão =====================
+ambigua <- pairs %>%
+  filter(Weight > LOWER, Weight < THRESHOLD)
+
+clerical_n <- min(50, nrow(ambigua))
+amostra <- ambigua %>% slice_sample(n = clerical_n)
+write_csv(amostra,"3_results/linkage/revisao_manual.csv")
+ 
+
+# ===================== 4) Métricas (com gabarito) =====================
+pred_keys <- paste(links$id1, links$id2)
 true_keys <- paste(truth$id_A, truth$id_B)
-  
+
 TP <- sum(pred_keys %in% true_keys)
-FP <- nrow(pred_links) - TP
-FN <- sum(!(true_keys %in% pred_keys))
-TN <- sum(!(top1_keys %in% true_keys) & !(top1_keys %in% pred_keys))
+FP <- length(pred_keys) - TP
+FN <- sum(!true_keys %in% pred_keys)
+
+if (file.exists("3_results/linkage/pairs_ranked.csv")) {
+  cand <- read.csv("3_results/linkage/pairs_ranked.csv", stringsAsFactors = FALSE)
+  cand_keys <- paste(cand$id1, cand$id2)
+  TN <- sum(!(cand_keys %in% true_keys) & !(cand_keys %in% pred_keys))
+} else TN <- NA_integer_
+
+precision <- ifelse(TP+FP==0, NA, TP/(TP+FP))
+recall    <- ifelse(TP+FN==0, NA, TP/(TP+FN))
+f1        <- ifelse(is.na(precision)|is.na(recall)|(precision+recall)==0, NA, 2*precision*recall/(precision+recall))
+
+metrics <- data.frame(THRESHOLD=0.85, TP, FP, FN, TN, precision, recall, f1)
+write.csv(metrics, "3_results/metrics_with_truth.csv", row.names = FALSE)
+print(metrics)
+
+# ===================== 5) Saídas finais (join com bases) =====================
+# Aqui vamos montar duas tabelas:
+# - links_final.csv       -> todos os links aceitos (>= THRESHOLD), com dados de A e B
+# - gray_links_final.csv  -> pares na zona ambígua, com dados de A e B (para revisão)
+#
+# Base A/B usadas: as mesmas do passo 02 (pré-processadas)
+A <- read.csv("2_refined_data/dataset_A_pre.csv", stringsAsFactors = FALSE)
+B <- read.csv("2_refined_data/dataset_B_pre.csv", stringsAsFactors = FALSE)
+A$A_idx <- seq_len(nrow(A))  
+B$B_idx <- seq_len(nrow(B))  
+
+# ---- Links aceitos (matches_links.csv) ----
+if (nrow(links) > 0) {
+  links_final <- links %>%
+    transmute(id1 = as.integer(id1),
+              id2 = as.integer(id2),
+              Weight = if ("Weight" %in% names(links)) Weight else NA_real_,
+              decision = "link") %>%
+    left_join(A, by = c("id1" = "A_idx")) %>%
+    left_join(B, by = c("id2" = "B_idx"),
+              suffix = c(".A", ".B"))
   
-precision <- ifelse(TP+FP == 0, NA, TP/(TP+FP))
-recall    <- ifelse(TP+FN == 0, NA, TP/(TP+FN))
-f1        <- ifelse(is.na(precision)|is.na(recall)|(precision+recall)==0,
-                      NA, 2*precision*recall/(precision+recall))
+  write.csv(links_final,"3_results/links_final.csv", row.names = FALSE)
+}
+# ---- Zona cinza (ambígua) ----
+if (nrow(ambigua) > 0) {
+  gray_links_final <- ambigua %>%
+    transmute(id1 = as.integer(id1),
+              id2 = as.integer(id2),
+              Weight,
+              decision = "review_gray") %>%
+    left_join(A, by = c("id1" = "A_idx")) %>%
+    left_join(B, by = c("id2" = "B_idx"),
+              suffix = c(".A", ".B"))
   
-tibble(THRESHOLD, TP, FP, FN, TN, precision, recall, f1) %>%
-write_csv(file.path(OUT_DIR, "metrics_with_truth.csv"))
-
-
-# ==== 4) Gráficos====
-# Histograma dos scores (top-1)
-p1 <- ggplot(top1, aes(Weight)) +
-  geom_histogram(bins = 40, na.rm = TRUE) +
-  labs(title = "Distribuição de scores (top-1 por id_B)",
-       x = "Weight", y = "Contagem")
-ggsave(file.path(OUT_DIR, "hist_scores_top1.png"), p1, width = 6.5, height = 4, dpi = 120)
-
-
-# ==== 5) Salvar saídas principais ====
-write_csv(pred_links, file.path(OUT_DIR, "links_final.csv"))     # aceitos (≥ THRESHOLD)
-write_csv(gray_review, file.path(OUT_DIR, "review_gray.csv"))    # revisar [LOWER, THRESHOLD)
-
-
-#------------------GERANDO BASE FINAL
-df_A <- read.csv("1_raw_data/dataset_A.csv", stringsAsFactors = FALSE) 
-df_B <- read.csv("1_raw_data/dataset_B.csv", stringsAsFactors = FALSE)
-
-links_final <- pred_links %>% 
-  dplyr::select(id_A, id_B, Weight) %>% 
-  mutate(decision = "link")
-
-links_final_df <- links_final %>%
-  dplyr::left_join(df_A, by = "id_A") %>%
-  dplyr::left_join(df_B, by = "id_B", suffix = c(".A", ".B"))
-
-write.csv(links_final_df,"3_results/links_final.csv", row.names = FALSE)
-
-
-gray_review <- top1 %>%
-  dplyr::filter(Weight >= LOWER, Weight < THRESHOLD) %>%
-  dplyr::mutate(decision = "review_gray") %>%
-  dplyr::select(id_A, id_B, Weight, decision)
-
-gray_review_df <- gray_review %>%
-  dplyr::left_join(A, by = "id_A") %>%
-  dplyr::left_join(B, by = "id_B", suffix = c(".A", ".B"))
-
-write.csv(gray_review_df,"3_results/gray_links_final.csv", row.names = FALSE)
+  write.csv(gray_links_final, "gray_links_final.csv", row.names = FALSE)
+} 
 

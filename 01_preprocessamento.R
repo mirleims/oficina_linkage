@@ -114,8 +114,8 @@ df_A$municipio_blk <- harmonizacao(df_A$municipio, rm_stopwords = TRUE)
 df_B$municipio_blk <- harmonizacao(df_B$municipio, rm_stopwords = TRUE)
 
 # ano de nascimento (como texto, útil para blocking)
-df_A$ano_nasc <- format(df_A$data_nascimento, "%Y")
-df_B$ano_nasc <- format(df_B$data_nascimento, "%Y")
+df_A$ano_nasc <-format(df_A$data_nascimento, "%Y")
+df_B$ano_nasc <-format(df_B$data_nascimento, "%Y")
 
 # ----------------------------------------------------
 # 5) Diagnóstico rápido

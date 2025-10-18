@@ -64,7 +64,7 @@ if (!is.null(pairs_tbl) && nrow(pairs_tbl) > 0) {
 
 # Classificação por limiares
 threshold_upper <- 0.85
-threshold_lower <- 0.60
+threshold_lower <- 0.77
 rp <- epiClassify(rp, threshold.upper = threshold_upper, threshold.lower = threshold_lower)
 
 cat("\nResumo após classificação por limiares:\n")
